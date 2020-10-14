@@ -11,7 +11,9 @@ router.get('/add-product', (request, response, next) => {
     response.render('add-product', {
         pageTitle: 'Add Product',
         // for dynamic active effect in nav menu for Add product
-        path: '/admin/add-product'
+        path: '/admin/add-product',
+        formCSS: true,
+        activeAddProduct: true
     });
 });
 

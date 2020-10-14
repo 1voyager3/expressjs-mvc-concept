@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc41d24b-5599-4b24-94bb-b3e59fec231b" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/public/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/404.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/add-product.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layouts/main-layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layouts/main-layout.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop.pug" afterDir="false" />
+    <list default="true" id="fc41d24b-5599-4b24-94bb-b3e59fec231b" name="Default Changelist" comment="Init commit">
+      <change afterPath="$PROJECT_DIR$/views/404.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/add-product.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layouts/main-layout.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/shop.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/product.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.html" afterDir="false" />
@@ -61,7 +55,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -81,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602605707460</updated>
-      <workItem from="1602605708524" duration="29471000" />
+      <workItem from="1602605708524" duration="35528000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602618604936</created>
@@ -97,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602626745966</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Init commit">
+      <created>1602688993759</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602688993759</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,9 +108,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="708" y="556" key="#File_Watchers" timestamp="1602689035281">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="708" y="556" key="#File_Watchers/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602689035281" />
     <state x="598" y="0" width="1267" height="1012" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1602682266766">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -126,14 +132,14 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="442" y="160" key="Github.UntrackedFilesDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602609084721" />
-    <state x="729" y="153" key="SettingsEditor" timestamp="1602684862117">
+    <state x="729" y="153" key="SettingsEditor" timestamp="1602689060823">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="729" y="153" key="SettingsEditor/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602684862116" />
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602626752370">
+    <state x="729" y="153" key="SettingsEditor/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602689060823" />
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602688995002">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602626752370" />
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602688995002" />
     <state x="616" y="160" key="scopes" timestamp="1602681960679">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

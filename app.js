@@ -1,13 +1,20 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const path = require('path');
-
+const expressHbs = require('express-handlebars');
 
 const app = express();
 
+
   // set() is a method for a global configuration value
 // details https://expressjs.com/en/4x/api.html#app.set
-app.set('view engine', 'pug');
+app.engine('hbs', expressHbs({
+    layoutsDir: 'views/layouts/',
+    defaultLayout: 'main-layout',
+    extname: 'hbs'
+}));
+
+app.set('view engine', 'hbs');
 // path where to find this templates, second argument is our directory
 app.set('views', 'views')
 
