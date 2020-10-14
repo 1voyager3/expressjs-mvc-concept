@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc41d24b-5599-4b24-94bb-b3e59fec231b" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/views/404.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/add-product.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layouts/main-layout.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/404.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/add-product.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/includes/end.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/includes/head.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/includes/navigation.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/shop.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/add-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/add-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602605707460</updated>
-      <workItem from="1602605708524" duration="35528000" />
+      <workItem from="1602605708524" duration="38548000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602618604936</created>
@@ -98,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602688993759</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Init commit">
+      <created>1602696176331</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602696176331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,10 +128,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="459" y="39" key="EditFileWatcherDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602682404479" />
-    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog" timestamp="1602688923288">
+    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog" timestamp="1602699207627">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602688923288" />
+    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602699207627" />
     <state x="442" y="160" key="Github.UntrackedFilesDialog" timestamp="1602609084721">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -136,10 +140,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="729" y="153" key="SettingsEditor/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602689060823" />
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602688995002">
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602696180044">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602688995002" />
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602696180044" />
     <state x="616" y="160" key="scopes" timestamp="1602681960679">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
