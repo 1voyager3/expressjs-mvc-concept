@@ -3,7 +3,7 @@ const Product = require('../models/product')
 
 exports.getAddProduct = (request, response, next) => {
 
-    response.render('add-product', {
+    response.render('admin/add-product', {
         pageTitle: 'Add Product',
         // for dynamic active effect in nav menu for Add product
         path: '/admin/add-product',
@@ -14,7 +14,12 @@ exports.getAddProduct = (request, response, next) => {
 
 exports.postAddproduct = (request, response, next) => {
 
-    const product = new Product(request.body.title);
+    const title = request.body.title;
+    const imageUrl = request.body.imageUrl;
+    const price = request.body.price;
+    const description = request.body.description;
+
+    const product = new Product(title, imageUrl, description, price);
     product.save();
 
     response.redirect('/');
@@ -22,16 +27,13 @@ exports.postAddproduct = (request, response, next) => {
 
 exports.getProducts = (request, response, next) => {
 
-    // here we use static method from '../models/product'
     Product.fetchAll( products => {
-        response.render('shop', {
+        // views/shop/index.ejs
+        response.render('admin/products', {
             prods: products,
-            pageTitle: 'Shop',
-            path: '/',
-            hasProducts: products.length > 0,
-            activeShop: true,
-            productCSS: true,
+            pageTitle: 'Admin Products',
+            path: '/admin/products'
         });
     });
-}
 
+}

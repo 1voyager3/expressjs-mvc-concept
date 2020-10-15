@@ -1,0 +1,38 @@
+
+<%- include('../includes/head.ejs') %>
+
+<link href="/css/forms.css" rel="stylesheet">
+<link href="/css/product.css" rel="stylesheet">
+
+<%- include('../includes/navigation.ejs') %>
+
+
+<main>
+    <form class="product-form" action="/admin/add-product" method="POST">
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+        </div>
+
+        <div class="form-control">
+            <label for="imageUrl">Image URL</label>
+            <input type="text" name="imageUrl" id="imageUrl">
+        </div>
+
+        <div class="form-control">
+            <label for="price">Price</label>
+            <!--      step attribute is for to be able add decimals in our price      -->
+            <input type="number" name="price" id="price" step="0.01">
+        </div>
+
+        <div class="form-control">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" rows="5"></textarea>
+        </div>
+
+        <button class="btn" type="submit">Add Product</button>
+    </form>
+</main>
+
+
+<%- include('../includes/end.ejs') %>
