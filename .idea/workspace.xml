@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:express-handlebars" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:expressjs-ejs" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:expressjs-pug" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fc41d24b-5599-4b24-94bb-b3e59fec231b" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/views/404.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/add-product.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/includes/end.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/includes/head.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/includes/navigation.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/404.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/404.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/404.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/add-product.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/add-product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/add-product.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main-layout.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main-layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main-layout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop.pug" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +100,10 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,7 +123,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602605707460</updated>
-      <workItem from="1602605708524" duration="38548000" />
+      <workItem from="1602605708524" duration="39475000" />
+      <workItem from="1602700284648" duration="12574000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602618604936</created>
@@ -102,11 +154,29 @@
       <option name="project" value="LOCAL" />
       <updated>1602696176331</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Init commit">
+      <created>1602699222550</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602699222550</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -120,6 +190,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="708" y="556" key="#File_Watchers/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602689035281" />
+    <state x="630" y="494" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602775006974">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="630" y="494" key="#com.intellij.fileTypes.FileTypeChooser/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602775006974" />
     <state x="598" y="0" width="1267" height="1012" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1602682266766">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -128,22 +202,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="459" y="39" key="EditFileWatcherDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602682404479" />
-    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog" timestamp="1602699207627">
+    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog" timestamp="1602780827572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602699207627" />
+    <state x="598" y="581" width="783" height="360" key="Github.ShareDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602780827572" />
     <state x="442" y="160" key="Github.UntrackedFilesDialog" timestamp="1602609084721">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="442" y="160" key="Github.UntrackedFilesDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602609084721" />
-    <state x="729" y="153" key="SettingsEditor" timestamp="1602689060823">
+    <state x="729" y="153" key="SettingsEditor" timestamp="1602703823383">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="729" y="153" key="SettingsEditor/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602689060823" />
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602696180044">
+    <state x="729" y="153" key="SettingsEditor/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602703823383" />
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602699225929">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602696180044" />
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602699225929" />
     <state x="616" y="160" key="scopes" timestamp="1602681960679">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

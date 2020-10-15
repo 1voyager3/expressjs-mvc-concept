@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const path = require('path');
+const errorsController = require('./controllers/errors');
+
 
 const app = express();
 
@@ -11,10 +13,11 @@ app.set('view engine', 'ejs');
 // path where to find this templates, second argument is our directory
 app.set('views', 'views')
 
-const adminData = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 const shopRouter = require('./routes/shop')
 
 // to be able parse request body
+//request.body
 app.use(bodyParser.urlencoded({extended: false}));
 
 // to serve files statically it means not handled by the express router
@@ -24,13 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 // the same as http://localhost:3000/admin
-app.use("/admin", adminData.routes);
+app.use("/admin", adminRoutes);
 
 app.use(shopRouter);
 
 // we don't use path because it by default
-app.use((request, response, next) => {
-    response.status(404).render('404', {pageTitle: 'Page Not Found'});
-})
+app.use(errorsController.get404);
 
 app.listen(3000)

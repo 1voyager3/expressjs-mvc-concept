@@ -1,31 +1,15 @@
 const express = require('express');
 const path = require('path');
-const rootDir = require('../utility/path');
+
+const productsController = require('../controllers/products');
+
 
 const router = express.Router();
 
-const products = [];
 
-router.get('/add-product', (request, response, next) => {
+router.get('/add-product', productsController.getAddProduct);
 
-    response.render('add-product', {
-        pageTitle: 'Add Product',
-        // for dynamic active effect in nav menu for Add product
-        path: '/admin/add-product',
-        formCSS: true,
-        activeAddProduct: true
-    });
-});
-
-router.post('/add-product', (request, response, next) => {
-
-    console.log(request.body);
-
-    products.push( {title: request.body.title} )
-
-    response.redirect('/');
-})
+router.post('/add-product', productsController.postAddproduct);
 
 
-exports.routes = router;
-exports.products = products;
+module.exports = router;
