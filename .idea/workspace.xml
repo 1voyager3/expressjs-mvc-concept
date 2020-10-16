@@ -39,26 +39,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc41d24b-5599-4b24-94bb-b3e59fec231b" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/controllers/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/edit-product.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/products.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop/cart.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop/checkout.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop/orders.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/shop/product-detail.ejs" afterDir="false" />
+    <list default="true" id="fc41d24b-5599-4b24-94bb-b3e59fec231b" name="Default Changelist" comment="Enhanced App">
+      <change afterPath="$PROJECT_DIR$/data/cart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/includes/add-to-cart.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/errors.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/errors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/product.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/add-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/add-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/404.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/add-product.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/edit-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/edit-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/products.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/products.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/end.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/end.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/head.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/includes/navigation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/navigation.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/shop.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop/product-list.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop/cart.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop/cart.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop/orders.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop/orders.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop/product-detail.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop/product-detail.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop/product-list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop/product-list.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,14 +112,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/views/shop" />
       <recent name="$PROJECT_DIR$/views/admin" />
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -126,7 +133,8 @@
       <updated>1602605707460</updated>
       <workItem from="1602605708524" duration="39475000" />
       <workItem from="1602700284648" duration="12574000" />
-      <workItem from="1602780888375" duration="8669000" />
+      <workItem from="1602780888375" duration="14795000" />
+      <workItem from="1602854079097" duration="23832000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602618604936</created>
@@ -170,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602781082754</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Enhanced App">
+      <created>1602794751591</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602794751592</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +208,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Update" />
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Enhanced App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced App" />
   </component>
   <component name="WindowStateProjectService">
     <state x="708" y="556" key="#File_Watchers" timestamp="1602689035281">
@@ -208,6 +224,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="598" y="0" width="1267" height="1012" key="#com.intellij.ide.macro.MacrosDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602682266766" />
+    <state x="535" y="356" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602869169759">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="535" y="356" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602869169759" />
     <state x="524" y="510" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602782463238">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -228,14 +248,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="729" y="153" key="SettingsEditor/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602703823383" />
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602781084460">
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2" timestamp="1602794910233">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602781084460" />
+    <state x="297" y="334" key="Vcs.Push.Dialog.v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602794910233" />
+    <state x="581" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602794899953">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="581" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602794899953" />
     <state x="616" y="160" key="scopes" timestamp="1602681960679">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="616" y="160" key="scopes/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602681960679" />
+    <state x="336" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1602864542367">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="336" y="0" width="1009" height="1470" key="search.everywhere.popup/2560.0.1920.1080/0.0.2560.1440@0.0.2560.1440" timestamp="1602864542367" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

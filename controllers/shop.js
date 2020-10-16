@@ -1,5 +1,6 @@
 // by convention name of imported class names with capital letter
-const Product = require('../models/product')
+const Product = require('../models/product');
+const Cart = require('../models/cart');
 
 
 exports.getProducts = (request, response, next) => {
@@ -13,6 +14,20 @@ exports.getProducts = (request, response, next) => {
             path: '/products'
         });
     });
+}
+
+exports.getProduct = (request, response, next) => {
+
+    const prodId = request.params.productId;
+
+    Product.findById(prodId, product => {
+        response.render('shop/product-detail', {
+            product: product,
+            pageTitle: product.title,
+            path: '/products'
+        })
+    });
+
 }
 
 exports.getIndex = (request, response, next) => {
@@ -29,11 +44,53 @@ exports.getIndex = (request, response, next) => {
 
 exports.getCart = (request, response, next) => {
 
-    response.render('shop/cart', {
-        pageTitle: 'Your Cart',
-        path: '/cart'
-    })
+    Cart.getCart( cart => {
+
+        Product.fetchAll( products => {
+
+            const cartProducts = [];
+
+            for (let product of products) {
+                const cartProductData = cart.products.find(prod => prod.id === product.id);
+                if (cartProductData) {
+                    cartProducts.push({productData: product, qty: cartProductData.qty });
+                }
+            }
+
+            response.render('shop/cart', {
+                pageTitle: 'Your Cart',
+                path: '/cart',
+                products: cartProducts
+            });
+        });
+    });
 }
+
+
+exports.postCart = (request, response, next) => {
+
+    const prodId = request.body.productId;
+
+    Product.findById( prodId, product => {
+        Cart.addProduct(prodId, product.price);
+    });
+
+    response.redirect('/cart')
+
+}
+
+exports.postCartDeleteProduct = (request, response, next) => {
+
+    const prodId = request.body.productId;
+
+    Product.findById(prodId, product => {
+
+        Cart.deleteProduct(prodId, product.price);
+
+        response.redirect('/cart');
+    });
+}
+
 
 exports.getOrders = (request, response, next) => {
 
